@@ -7,7 +7,12 @@ final private TalkAtive talka;
     @Override
     public void run() {
 for (int i = 0; i < 100; i++) {
-    System.out.println("This is a test of talka" + talka);
+    //this is mine but chatgpt suggested the below
+//    System.out.println("Number: " + i);
+//    System.out.println("This is a test of talka" + talka.getNumber());
+    //chatgpted improvment
+    System.out.println(Thread.currentThread().getName() + " - iteration " + i + " - Number: " + talka.getNumber());
+
 }
     }
 
